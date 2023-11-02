@@ -1,0 +1,319 @@
+body {
+    font-family: Nunito, sans-serif;
+    color:rgb(0, 0, 0);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ffffff;
+    padding: 100px 0;
+}
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin: 50px 0;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 50%;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #c40072;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#F6CFCF;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color:black;
+}
+
+.titulo{
+    background-color:#F6CFCF;
+}
+.sub{
+    background-color:#F6CFCF;
+}
+section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+#topo {
+    background-color:black;
+  }
+  
+#topo h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+#cortes {
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.corte-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Usar space-between para distribuir o espaço uniformemente */
+    margin: 0 -10px; /* Adicionar margens negativas para compensar as margens internas das divs .corte */
+}
+
+.corte {
+    flex: calc(33.33% - 20px); /* Fazer com que cada div .corte ocupe cerca de 1/3 da largura disponível */
+    margin: 10px; /* Adicionar margem interna para espaçamento entre as divs .corte */
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+    box-sizing: border-box; /* Garantir que a largura e a altura incluam preenchimento e borda */
+}
+
+.corte img {
+display: block; /* Isso remove margens extras em torno da imagem */
+margin: 0 auto; /* Isso centraliza a imagem horizontalmente */
+}
+
+.corte h3 {
+    margin-top: 10px;
+}
+
+.corte p {
+    margin-top: 10px;
+}
+
+.botao {
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+    background-color: #F6CFCF;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+
+h1, h2, h3 {
+    font-family: Asap, sans-serif;
+    color:dimgray;
+}
+
+.botao {
+    color:black;
+    text-decoration: none;
+    padding: 10px 0px;
+    background-color:#F6CFCF;
+    font-size: .9em;
+    border-radius: 3px;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#F6CFCF;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color:black;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color:#f1f1f1;
+    color:black;
+}
+
+#sobre h2 {
+    color:black;
+}
+
+#sobre p {
+    margin-bottom: 2.3em;
+    max-width: 1000px;
+}
+
+#sobre .botao {
+    background-color:#F6CFCF;
+    color:black;
+}
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Contato */
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* #contato h2 {
+    color:darkgrey;
+} */
+
+/* Rodape */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:#F6CFCF;
+    color: #ffffff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+    /* Nav */
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /* Cabeçalho */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../foto_produto/salon.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        padding: 20px;
+    }
+    header h1 {
+        color:black;
+    }
+    header p {
+        margin-bottom: 2em;
+    }
+
+    #sobre {
+        height: 250px;
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /* Serviços */
+
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    /* Fotos */
+    #fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #fotos h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #fotos img {
+        width: 33.333333%;
+    }
+
+    /* Contato */
+
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato h2, #contato p {
+        width: 100%;
+    }
+}
